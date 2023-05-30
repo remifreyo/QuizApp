@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('./partials/header') %>
+
+<section class="homepage">
+<h1>Welcome to QuizApp</h1>
+<br>
+<br>
+<p>Login to take your first quiz</p>
+<br>
+<br>
+<a href="/auth/google">
+  <button>&nbsp; LOG IN &nbsp;</button>
+</a>
+</section>
+<%- include('./partials/footer') %>

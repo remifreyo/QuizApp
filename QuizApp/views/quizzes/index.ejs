@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+
+<h1 class="h1">Available Quizzes</h1>
+<section class="quizzes">
+  <div>
+    <% quizzes.forEach(function(q) { %>
+      <img class="quizImg" src="<%= q.image %>" alt="">
+      <p><%= q.name %></p>
+      <a href="/quizzes/<%= q._id %>"><button class="takeQuizBtn">Take Quiz</button></a>
+      <% }); %>
+    </div>
+</section>
+<%- include('../partials/footer') %>
