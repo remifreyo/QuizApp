@@ -1,9 +1,20 @@
 <%- include('../partials/header') %>
 
 <h1 class="h1"><%= quiz.name %></h1>
-<section>
-  <div>
-    <p></p>
-  </div>
+<section class="quizQuestions">
+    <form action="/quizzes/<%= quiz._id %>/result" method="POST">
+      <% let total = 1 %>
+      <% quiz.questions.forEach( q => { %>
+      <p><%= total %>. <%= q.question %></p> <br>
+      <% let possAns = 1 %>
+      <% q.possibleAnswers.forEach( p => { %>
+      &nbsp; &nbsp; &nbsp; 
+      <input type="checkbox" id="p<%= possAns %>">  <label for="p<%= possAns %>"><%= p %></label> <br><br>
+      <% possAns += 1 %>
+    <% }); %>
+    <br><br>
+    <% total += 1 %>
+    <% }); %>
+  </form>
 </section>
 <%- include('../partials/footer') %>

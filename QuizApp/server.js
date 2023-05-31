@@ -14,6 +14,7 @@ var indexRouter = require('./routes/index')
 var usersRouter = require('./routes/users')
 var quizzesRouter = require('./routes/quizzes')
 var resultsRouter = require('./routes/results')
+const { Script } = require('vm')
 
 var app = express()
 

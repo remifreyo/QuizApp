@@ -70,7 +70,7 @@ padding-right: 22vw;
   background-color: rgb(139, 191, 255);
   border-radius: 4px;
   border-width: 2px;
-  font-weight: 600;
+  font-weight: 300;
   width: 8vw;
   height: 2.2vh;
 }
@@ -122,7 +122,7 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 .takeQuizBtn {
-  margin-top: 15px;
+  margin-top: 2vh;
   background-color: rgb(139, 191, 255);
   border-radius: 4px;
   border-width: 2px;
@@ -135,4 +135,10 @@ grid-template-columns: 1fr 1fr 1fr;
 .quizImg {
   height: 100%;
   width: 100%;
+  padding-bottom: 2vh;
+}
+
+.quizQuestions {
+  margin-top: 7vh;
+  margin-left: 30vw;
 }

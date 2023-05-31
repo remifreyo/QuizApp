@@ -5,7 +5,8 @@ const questionSchema = new Schema(
   {
     question: String,
     possibleAnswers: [],
-    answer: String
+    answer: String,
+    category: String
   },
   {
     timestamps: true

@@ -6,5 +6,7 @@ const quizzesCtrl = require('../controllers/quizzes')
 router.get('/index', quizzesCtrl.index)
 // GET /quizzes/:id
 router.get('/:id', quizzesCtrl.show)
+// POST /quizzes/:id/result
+router.post('/:id/result', quizzesCtrl.gradeQuiz)
 
 module.exports = router
