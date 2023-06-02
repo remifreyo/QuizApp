@@ -32,11 +32,11 @@
 
 ### **_Screenshots_**
 
-![Image](public/images/screenshot1.png)
-![Image](public/images/screenshot2.png)
-![Image](public/images/screenshot3.png)
-![Image](public/images/screenshot4.png)
-![Image](public/images/screenshot5.png)
+![Image](quizapp/public/images/screenshot1.png)
+![Image](quizapp/public/images/screenshot2.png)
+![Image](quizapp/public/images/screenshot3.png)
+![Image](quizapp/public/images/screenshot4.png)
+![Image](quizapp/public/images/screenshot5.png)
 
 ---
 
