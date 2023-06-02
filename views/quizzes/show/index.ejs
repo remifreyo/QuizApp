@@ -8,11 +8,12 @@
       <p><%= total %>. <%= q.question %></p> <br>
       <% let possAns = 1 %>
       <% q.possibleAnswers.forEach( p => { %>
-      &nbsp; &nbsp; &nbsp; 
-      <input type="radio" id="p<%= possAns %>" value="<%= p %>" name="<%= total %>" required>  <label for="p<%= possAns %>"><%= p %></label> <br><br>
+      <section class="quizAnswers">
+        <input type="radio" id="p<%= possAns %>" value="<%= p %>" name="<%= total %>" required>  <label for="p<%= possAns %>"><%= p %></label>
+      </section> <br>
       <% possAns += 1 %>
     <% }); %>
-    <br><br>
+    <br>
     <% total += 1 %>
     <% }); %>
     <input type="submit" value="Get Result" class="quizSubmitBtn">

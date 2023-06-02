@@ -45,7 +45,7 @@ color: white;
 
 .h1 {
   display: grid;
-  justify-content: center;
+  text-align: center;
   padding-top: 6vh;
 }
 
@@ -154,17 +154,27 @@ grid-template-columns: 1fr 1fr 1fr;
 
 .quizQuestions {
   margin-top: 7vh;
+  text-align: left;
   margin-left: 30vw;
+  margin-right: 20vw;
+  line-height: 130%;
+}
+
+.quizAnswers {
+  text-align: left;
+  margin-left: 6vw;
 }
 
 .quizSubmitBtn {
-margin-left: 14vw;
+  width: 60%;
+  color: black;
+  margin-left: 7vw;
+  margin-top: 3vh;
   background-color: rgb(139, 191, 255);
   border-radius: 4px;
-  border-width: 2px;
+  border-width: 3px;
   font-weight: 600;
-  width: 9vw;
-  height: 3vh;
+  height: 4.5vh;
 }
 
 .resultPage {
