@@ -40,9 +40,9 @@
 
 ### **_Future Updates_**
 
-- [] Style the application
-- [] Add ability to login with google
-- [] Add "What Decade of Music Are You?" Quiz
+- [x] ~~Style the application~~
+- [x] ~~Add ability to login with google~~
+- [x] ~~Add "What Decade of Music Are You?" Quiz~~
 - [x] ~~Build Wireframe~~
 - [x] ~~Create ReadMe~~
 - [x] ~~Create Trello Board~~
