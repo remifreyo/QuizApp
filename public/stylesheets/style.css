@@ -47,6 +47,8 @@ color: white;
   display: grid;
   text-align: center;
   padding-top: 6vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 
 .h1_results {
@@ -102,10 +104,26 @@ padding-left: 6vw;
 display: grid;
 justify-content: center;
 padding-top: 25vh;
+text-align: center;
+}
+
+.homepage h1 {
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 
 .homepage h1 {
   font-size: 48px;
+}
+
+.homepage button {
+  background-color: rgba(84, 154, 237, 1);
+  border-radius: 4px;
+  border-width: 3px;
+  font-weight: 600;
+  height: 4vh;
+  width: 30%;
+  color: black;
 }
 
 .homepage p {
@@ -113,18 +131,7 @@ padding-top: 25vh;
   font-size: 16px;
 }
 
-.homepage button {
-  background-color: rgba(84, 154, 237, 1);
-  border-radius: 4px;
-  border-width: 2px;
-  font-weight: 600;
-  width: 12vw;
-  height: 3.5vh;
-}
 
-.homepage a {
-  justify-self: center;
-}
 
 .quizzes {
 padding-left: 30px;
