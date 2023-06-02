@@ -13,6 +13,11 @@ a {
   color: #00B7FF;
 }
 
+/* Devices w/ a width no higher than 768 */
+@media only screen and (max-width: 800px) {
+
+}
+
 .navigation {
   display: flex;
   justify-content: right;
@@ -52,18 +57,27 @@ padding-top: 6vh;
 
 .results {
 display: flex;
-justify-content:space-around;
 padding-top: 8vh;
 padding-right: 36vw;
+padding-left: 18vw;
 text-decoration: underline;
 
 }
 
+.results p {
+  padding-right: 29vw;
+}
+
 .result {
-display: flex;
-padding-top: 2vh;
-justify-content:space-around;
-padding-right: 22vw;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding-top: 4vh;
+padding-left: 6vw;
+}
+
+.result p {
+  display: grid;
+  justify-content: space-around;
 }
 
 .result button {
@@ -72,7 +86,7 @@ padding-right: 22vw;
   border-width: 2px;
   font-weight: 300;
   width: 8vw;
-  height: 2.2vh;
+  height: 2.8vh;
 }
 
 .avi {
@@ -141,4 +155,29 @@ grid-template-columns: 1fr 1fr 1fr;
 .quizQuestions {
   margin-top: 7vh;
   margin-left: 30vw;
+}
+
+.quizSubmitBtn {
+margin-left: 14vw;
+  background-color: rgb(139, 191, 255);
+  border-radius: 4px;
+  border-width: 2px;
+  font-weight: 600;
+  width: 9vw;
+  height: 3vh;
+}
+
+.resultPage {
+ margin-top: 6vh;
+ text-align: center;;
+}
+.resultPage form {
+  display:inline;
+}
+.resultPage button {
+  margin: 30px;
+}
+
+.resultPageText {
+  display: grid;
 }

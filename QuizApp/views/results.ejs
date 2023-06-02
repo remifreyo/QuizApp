@@ -3,16 +3,19 @@
 <img class="avi" src="<%= user.avatar %>" alt="">
 <h1 class="h1_results">Your Results</h1>
 <section class="results">
-  <p> Quiz</p>
+  <p>Quiz</p>
   <p>Result</p>
 </section>
+<% user.results.forEach(r => { %>
 <div class="result">
-  <% quizzes.forEach(function(q) { %>
-    <p><%= q.name %></p>
-    <p><%= q.result %></p>
-    <a href=""><button>Retake</button></a>
-    <% }); %>
+    <p><%= r.name %></p>
+    <p><%= r.result %></p>
+    <form action="/quizzes/<%= r.quizId %>/result/<%= r._id %>?_method=DELETE" method="POST"><button>Retake</button></form>
+    
   </div>
+    <% }); %>
+  
+
 
 
 <%- include('./partials/footer') %>

@@ -6,10 +6,6 @@ const quizSchema = new Schema(
     name: String,
     image: String,
     category: String,
-    result: {
-      type: String,
-      default: 'placeholder'
-    },
     questions: [
       {
         type: Schema.Types.ObjectId,

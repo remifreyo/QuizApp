@@ -5,16 +5,15 @@ var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 var session = require('express-session')
 const passport = require('passport')
+var methodOverride = require('method-override')
 
 require('dotenv').config()
 require('./config/database')
 require('./config/passport')
 
 var indexRouter = require('./routes/index')
-var usersRouter = require('./routes/users')
 var quizzesRouter = require('./routes/quizzes')
 var resultsRouter = require('./routes/results')
-const { Script } = require('vm')
 
 var app = express()
 
@@ -26,6 +25,7 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
+app.use(methodOverride('_method'))
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(
   session({
@@ -42,7 +42,6 @@ app.use(function (req, res, next) {
 })
 
 app.use('/', indexRouter)
-app.use('/users', usersRouter)
 app.use('/quizzes', quizzesRouter)
 app.use('/results', resultsRouter)
 

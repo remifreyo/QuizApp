@@ -6,7 +6,8 @@ const questionSchema = new Schema(
     question: String,
     possibleAnswers: [],
     answer: String,
-    category: String
+    category: String,
+    decade: String
   },
   {
     timestamps: true

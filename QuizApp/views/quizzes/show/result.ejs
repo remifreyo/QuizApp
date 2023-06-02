@@ -1,0 +1,11 @@
+<%- include('../../partials/header') %>
+<h1 class="h1"><%= result.name %></h1>
+<section class="resultPage">
+  <section class="resultPageText">
+  <h3>Result:&nbsp;<%= result.result %></h3><br>
+  <p><%= result.writeup %></p>
+</section>
+<a href="/quizzes/index"><button class="takeQuizBtn">New Quiz</button></a>
+<form action="/quizzes/<%= quiz._id %>/result/<%= result._id %>?_method=DELETE" method="POST"><button class="takeQuizBtn">Retake</button></form>
+</section>
+<%- include('../../partials/footer') %> 
