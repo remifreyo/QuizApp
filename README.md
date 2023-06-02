@@ -42,6 +42,18 @@
 
 ### **_Future Updates_**
 
+- [] Create a social element allowing you to share your results with friends to social networks
+- [] Give the correct answers and the user answers for each question on the result page
+- [] Give trivia for each question on the result page
+- [] embed youtube music videos to associated questions on the result page
+- [] add a Spotify/Apple Music playlist for each decade to the result page
+- [] Add 100+ questions for every quiz and pull 15 at random for every iteration of a quiz
+- [] Design 404 Page
+- [] add a "see result" button for seeing your particular result to the results page
+- [] Add a "delete" button to delete a result without retaking the quiz
+- [] Make QuizApp Mobile Friendly
+- [] Add Additional Quizzes (Aiming for 30 total by EOY)
+- [] Change the Font Family
 - [x] ~~Style the application~~
 - [x] ~~Add ability to login with google~~
 - [x] ~~Add "What Decade of Music Are You?" Quiz~~
