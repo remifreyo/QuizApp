@@ -8,7 +8,12 @@
   <title><%= title %></title>
 </head>
 <body>
-<nav class="navigation">
+<!-- <nav class="navigation"> -->
+  <nav class="flex items-center justify-between flex-wrap p-2 navigation fixed w-full z-20 top-0 left-0 border-b border-gray-800">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <span class="font-semibold text-xl tracking-tight"><a class="text-white" href="/quizzes/index">QuizApp</a></span>
+    </div>
+    <div class="nav-right">
   <% if (user) { %>
     <a href="/quizzes/index" <%- title === 'Quizzes' ? 'class="active"' : '' %>>Quizzes</a>
     <a href="/results" <%- title === 'Results' ? 'class="active"' : '' %>>Results</a> 
@@ -16,5 +21,6 @@
   <% } else { %>
     <a href="/auth/google">LOG IN</a>
   <% } %>
+</div>
 </nav>
-<main>
+<main class="min-h-screen">

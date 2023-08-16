@@ -5,7 +5,7 @@
   <h3>Result:&nbsp;<%= result.result %></h3><br>
   <p><%= result.writeup %></p>
 </section>
-<a href="/quizzes/index"><button class="takeQuizBtn">New Quiz</button></a>
-<form action="/quizzes/<%= quiz._id %>/result/<%= result._id %>?_method=DELETE" method="POST"><button class="takeQuizBtn">Retake</button></form>
+<a href="/quizzes/index"><button class="takeQuizBtn border-gray-800">New Quiz</button></a>
+<form action="/quizzes/<%= quiz._id %>/result/<%= result._id %>?_method=DELETE" method="POST"><button class="takeQuizBtn border-gray-800">Retake</button></form>
 </section>
 <%- include('../../partials/footer') %> 

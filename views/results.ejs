@@ -10,7 +10,7 @@
 <div class="result">
     <p><%= r.name %></p>
     <p><%= r.result %></p>
-    <form action="/quizzes/<%= r.quizId %>/result/<%= r._id %>?_method=DELETE" method="POST"><button>Retake</button></form>
+    <form action="/quizzes/<%= r.quizId %>/result/<%= r._id %>?_method=DELETE" method="POST"><button class='border-gray-800'>Retake</button></form>
     
   </div>
     <% }); %>

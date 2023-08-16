@@ -1,12 +1,12 @@
 <%- include('../partials/header') %>
 
-<h1 class="h1">Available Quizzes</h1>
+<h1 class="h1 text-2xl">Available Quizzes</h1>
 <section class="quizzes">
   <div>
     <% quizzes.forEach(function(q) { %>
       <img class="quizImg" src="<%= q.image %>" alt="">
       <p><%= q.name %></p>
-      <a href="/quizzes/<%= q._id %>"><button class="takeQuizBtn">Take Quiz</button></a>
+      <a href="/quizzes/<%= q._id %>"><button class="takeQuizBtn border-gray-800">Take Quiz</button></a>
       <% }); %>
     </div>
 </section>
