@@ -4,7 +4,7 @@
 <section class="quizQuestions">
     <form action="/quizzes/<%= quiz._id %>/result" method="POST">
       <% let total = 1 %>
-      <% quiz.questions.forEach( q => { %>
+      <% questions.forEach( q => { %>
       <p><%= total %>. <%= q.question %></p> <br>
       <% let possAns = 1 %>
       <% q.possibleAnswers.forEach( p => { %>
